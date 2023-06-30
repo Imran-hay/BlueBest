@@ -89,7 +89,7 @@
 
       <!--crousal-->
 
-      <div id="myCarousel" class="carousel slide" data-ride="carousel">
+      <div id="myCarousel" class="carousel slide mb-0" data-ride="carousel">
         <ol class="carousel-indicators">
           <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
           <li data-target="#myCarousel" data-slide-to="1"></li>
@@ -146,7 +146,19 @@
         </a>
       </div>
 
-      
+      <!--Welcome Page-->
+
+      <div class="container-fluid wellcome-anim">
+        <div class="row">
+           <div class="col-lg-6 order-lg-2" id="anim">
+          </div>
+          <div class="col-lg-6 order-lg-1 d-flex justify-content-center align-items-center flex-column" id="Welcome-bg">
+            <h1>Wellcome!</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste, alias. A quaerat nisi debitis iure quisquam, 
+              quis quidem ipsam at animi rerum illum aliquam tempora suscipit, modi natus, asperiores nostrum!</p>
+          </div>
+        </div>
+      </div>
 
 
 
@@ -176,6 +188,14 @@
          loop: true,
          autoplay: true,
          path: 'data.json'
+      });
+
+      var animation = bodymovin.loadAnimation({
+         container: document.getElementById('anim'),
+         renderer: 'svg',
+         loop: true,
+         autoplay: true,
+         path: 'data2.json'
       });
    </script>
 
