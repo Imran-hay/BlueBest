@@ -13,7 +13,7 @@ body{
 
 .nav-bg a{
   color: #e7e7e7 !important;
-  font-size: 1.2rem;
+  font-size: 1rem;
 }
 
 @media screen and (max-width: 991px) {
@@ -210,18 +210,18 @@ body{
 #lottie-container {
   width: 100vw; /* set the width of the container */
   height: 100%; /* set the height of the container */
-  background-color: #508991;
+  background-color: whitesmoke;
   /*background-image: url("b4.jpg");*/
 }
 #lottie-container2 {
   width: 100vw; /* set the width of the container */
   height: 100%; /* set the height of the container */
-  background-color: #508991;
+  background-color: whitesmoke;
 }
 #lottie-container3 {
   width: 100%; /* set the width of the container */
   height: 100%; /* set the height of the container */
-  background-color: #508991;
+  background-color: whitesmoke;
 }
 
 .ct {
@@ -280,9 +280,9 @@ body{
 /*button2*/
 
 /*wellcome*/
-#Welcome-bg{
+/* #Welcome-bg{
   background-color: #FBFBFF;
-}
+} */
 
 @keyframes anim {
   0%   {left:-100%;}
@@ -290,10 +290,31 @@ body{
 }
 
 .wellcome-anim{
+  opacity: 0;
+  transform: translateY(100px);
+  transition: opacity 1s ease, transform 1s ease;
+ /*  opacity: 1;
   position: relative;
   animation-name: anim;
-  animation-duration: 2.0s;/*Edit this if you want*/
+  animation-duration: 2.0s; */
 }
+
+.wellcome-anim.test{
+  opacity: 1;
+  transform: translateX(0);
+}
+
+.animated-text {
+  opacity: 0;
+  transform: translateY(100px);
+  transition: opacity 1s ease, transform 1s ease;
+}
+
+.animated-text.visible {
+  opacity: 1;
+  transform: translateX(0);
+}
+
 
 
 /*cards*/
@@ -424,16 +445,14 @@ body{
 .circular-carousal {
   display: flex;
   justify-content: center;
-  width : 1100px;
-  height : 700px;
+ 
   margin : 0 auto;
   
   perspective: 250px;
   perspective-origin: 50% 50%;
   
   .circular-carousal--image {
-    width: 550px;
-    height : 450px;
+    
     border-radius: 20px;
     overflow : hidden;
     align-self: center;
@@ -573,4 +592,55 @@ body{
 
 
 /*team card*/
-  
+
+/* what we do */
+.card10 {
+  width: 100%;
+  height: 254px;
+  border-radius: 4px;
+  background: #0B476C;
+  display: flex;
+  gap: 5px;
+  padding: .4em;
+}
+
+.card10 a {
+  height: 100%;
+  flex: 1;
+  overflow: hidden;
+  cursor: pointer;
+  border-radius: 2px;
+  background: #0B476C;
+  border: 1px solid #09bc8a;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.card10 a:hover {
+  flex: 4;
+}
+
+.card10 a span:nth-child(1) {
+  min-width: 14em;
+  padding: .5em;
+  text-align: center;
+  transform: rotate(-90deg);
+  transition: all .8s;
+  text-transform: uppercase;
+  color: #09bc8a;
+  letter-spacing: .1em;
+}
+
+.card10 a:hover span:nth-child(1){
+  transform: rotate(0);
+}
+
+.card10 a:hover span:nth-child(2){
+  min-width: 10em;
+  transform: rotate(0);
+  display: block !important;
+  padding: .5em;
+  text-align: center;
+  color: #09bc8a;
+}
