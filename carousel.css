@@ -57,6 +57,23 @@ body {
 /* Featurettes
 ------------------------- */
 
+#heading {
+
+ padding: 5px;
+}
+
+.f1{
+  text-align: center;
+  color: aqua;
+}
+
+.p1{
+  text-align: center;
+  margin-left: 10px;
+  color: #011924;
+}
+
+
 .featurette-divider {
   margin: 5rem 0; /* Space out the Bootstrap <hr> more */
 }

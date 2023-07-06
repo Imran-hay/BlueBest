@@ -8,8 +8,7 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css">
 
-    
-<script src="c.js"></script>
+
 
 
 
@@ -17,6 +16,10 @@
 
 <!-- Bootstrap core CSS -->
 <link href="./dist/css/bootstrap.min.css" rel="stylesheet">
+<!--new script-->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+ 
+<script src="contact.js"></script>
 
 <!-- Custom styles for this template -->
 <link href="carousel.css" rel="stylesheet">
@@ -63,7 +66,7 @@
                         <a class="nav-link d-flex align-items-center button mr-lg-3" href="#"> <span class="button-content">Our Team</span></a>
                       </li>
                       <li class="nav-item">
-                          <a class="nav-link d-flex align-items-center button mr-lg-3" href="#"> <span class="button-content">Contact Us</span></a>
+                          <a class="nav-link d-flex align-items-center button mr-lg-3" href="#hided"> <span class="button-content">Contact Us</span></a>
                         </li>
                     </ul>
                       <div class="card d-flex flex-row">
@@ -114,9 +117,9 @@
                 <p class="ct">
                   BlueBest Trading an emerging and fast-growing pharmaceutical company based in Ethiopia and that is one of the outshining enterprises in the sector which is established capitalizing on the core business successes that we have been coming through and the competitive advantage that we have built up
                 </p>
-                <p><button class="button2">
+                <a href="#welcome"><button class="button2">
                   <span class="button2-content">Learn More </span>
-              </button></p>
+              </button></a>
               </div>
             </div>
           </div>
@@ -124,10 +127,10 @@
             <div id="lottie-container2" class="lottie-container"></div>
             <!-- <img class="first-slide" src="data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" alt="First slide">-->
             <div class="container">
-              <div class="carousel-caption">
-                <h1 class="ct">BlueBest Trading.</h1>
+              <div class="carousel-caption text-left">
+                <h1 class="ct">About US.</h1>
                 <p class="ct">
-                  We are a sole proprietary multi-sectoral industry investment firm that has been majorly involved in the Real estate and manufacturing businesses
+                  BlueBest Trading is a multi-sectoral investment firm founded in 2011, involved in real estate, manufacturing, textiles, and pharmaceuticals with a focus on importing and distributing quality medical products to address supply challenges
                 </p>
                 <p><button class="button2">
                   <span class="button2-content">Learn More </span>
@@ -139,9 +142,27 @@
             <div id="lottie-container3" class="lottie-container"></div>
             <!-- <img class="first-slide" src="data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" alt="First slide">-->
             <div class="container">
-              <div class="carousel-caption text-right">
-                <h1 class="ct">Our services.</h1>
-                <p class="ct">We have established partnership with world-class pharmaceutical manufacturersand also calling additional pharmaceutical manufacturers all over the world who have in-state-of-the-art manufacturing facilities and who are willing to be our suppliers.</p>
+              <div class="carousel-caption text-left">
+                <h1 class="ct">Our Team.</h1>
+                <p class="ct">
+                  Our company takes pride in its extensive and proficient team, consisting of a large number of skilled professionals with diverse expertise in the industry, enabling us to efficiently handle various challenges and ensure exceptional delivery of our products.
+                </p>
+                <p><button class="button2">
+                  <span class="button2-content">Learn More </span>
+              </button></p>
+              </div>
+            </div>
+          </div>
+
+          <div class="carousel-item">
+            <div id="lottie-container4" class="lottie-container"></div>
+            <!-- <img class="first-slide" src="data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" alt="First slide">-->
+            <div class="container">
+              <div class="carousel-caption text-left">
+                <h1 class="ct">Services we provide.</h1>
+                <p class="ct">
+                  BlueBest Trading is a comprehensive pharmaceutical company offering import, distribution, marketing services, local representation for government tenders, and assistance with market authorization processes.
+                </p>
                 <p><button class="button2">
                   <span class="button2-content">Learn More </span>
               </button></p>
@@ -159,9 +180,10 @@
         </a>
       </div>
 
+      
       <!--Welcome Page-->
 
-      <div class="container-fluid animated-text">
+      <div class="container-fluid animated-text" id="welcome">
         <div class="row">
            <div class="col-lg-6 order-lg-2" id="anim">
           </div>
@@ -175,16 +197,20 @@
       <!-- why work with us -->
       <div class="container">
         <div class="row justify-content-center">
-          <div class="col-6">
+          <div class="col-md-6 col-12">
             <div class="card10">
-              <a class="d-flex flex-column"><span>Fast responce</span><span class="d-none">Lorem ipsum dolor sit amet consectetur, adipisicing elit.</span></a>
-              <a class="d-flex flex-column"><span>Good quality</span><span class="d-none">Lorem ipsum dolor sit amet consectetur, adipisicing elit.</span></a>
-              <a class="d-flex flex-column"><span>well equpite</span><span class="d-none">Lorem ipsum dolor sit amet consectetur, adipisicing elit.</span></a>
-              <a class="d-flex flex-column"><span>free delivery</span><span class="d-none">Lorem ipsum dolor sit amet consectetur, adipisicing elit.</span></a>
+              <a class="d-flex flex-column"><span>Business operations</span><span class="d-none">BlueBest Trading serves the Ethiopian market through import, distribution, marketing, and tendering agency. We have partnerships with renowned pharmaceutical manufacturers and seek additional suppliers globally.</span></a>
+              <a class="d-flex flex-column"><span>Import and Distribution</span><span class="d-none">Import and distribution of patented generic pharmaceuticals, over-the-counter medicinal products, medical devices, medical equipment.</span></a>
+              <a class="d-flex flex-column"><span>Pharmaceutical Marketing Services</span><span class="d-none">We provide specialists, product experts, and medical workers to consult customers at points of sale, increasing brand awareness and sales. We also engage influencers, distributors, and organize promotional events to meet all customer needs in pharmaceutical advertising. </span></a>
+              <a class="d-flex flex-column"><span>Local Representation for Government Tenders</span><span class="d-none">BlueBest Trading understands the importance of government contracts and helps partners overcome challenges by offering local representation and agency services for effective participation in international tenders.</span></a>
+              <a class="d-flex flex-column"><span>Market Authorization</span><span class="d-none">BlueBest Trading supports regulatory professionals in the medical industry by offering local expertise to navigate product registration and obtain market authorizations efficiently.</span></a>
+              
             </div>
           </div>
         </div>
       </div>
+      <br> <br>
+
       
 
       <!--cards-->
@@ -201,17 +227,22 @@
               <div class="card-container2">
                 <div class="card2">
                   <div class="img-content">
-                    <h3 class="ti">Title</h3>
+                    <h3 class="ti">Differentiation in the Market Place</h3>
                     <!--<svg clip-rule="evenodd" fill-rule="evenodd" stroke-linejoin="round" stroke-miterlimit="2" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="m2 19v-14c0-.552.447-1 1-1 .542 0 4.418 2.028 9 2.028 4.593 0 8.456-2.028 9-2.028.55 0 1 .447 1 1v14c0 .553-.45 1-1 1-.544 0-4.407-2.028-9-2.028-4.582 0-8.458 2.028-9 2.028-.553 0-1-.448-1-1zm1.5-.791 6.449-7.691c.289-.344.879-.338 1.16.012 0 0 1.954 2.434 1.954 2.434l1.704-1.283c.319-.24.816-.168 1.054.154l4.679 6.335v-12.44c-1.58.58-4.819 1.798-8.5 1.798-3.672 0-6.918-1.218-8.5-1.799zm2.657-.834c1.623-.471 3.657-.903 5.843-.903 2.309 0 4.444.479 6.105.98l-3.041-4.117-1.065.802.275.344c.259.323.206.796-.117 1.054-.323.259-.795.207-1.054-.117l-2.591-3.236zm.698-9.534c-1.051 0-1.905.854-1.905 1.905s.854 1.904 1.905 1.904 1.904-.853 1.904-1.904-.853-1.905-1.904-1.905zm0 1.3c.333 0 .604.271.604.605 0 .333-.271.604-.604.604-.334 0-.605-.271-.605-.604 0-.334.271-.605.605-.605z" fill-rule="nonzero"></path></svg>-->
                   </div>
                 <div class="content">
-                  <p class="heading">Title</p>
-                  <p>
-                    Lorem ipsum dolor sit amet, consectetur adipii
-                    voluptas ten mollitia pariatur odit, ab
-                    minus ratione adipisci accusamus vel est excepturi laboriosam magnam
-                    necessitatibus dignissimos molestias.
-                  </p>
+                  <p class="heading">Differentiation in the Market Place</p>
+                  <div>
+                    
+                      <p class="td">BlueBest Trading plays a significant role in Ethiopia's emerging pharmaceutical business.</br>
+                      <p class="td">Our company boasts a team of specialists and highly skilled professionals.</>
+                      <p class="td">Access to forex allows for increased product availability through frequent imports.</>
+
+                    
+                   
+                    
+                   
+                  </div>
                 </div>
               </div>
               </div>
@@ -221,17 +252,14 @@
               <div class="card-container2">
                 <div class="card2">
                   <div class="img-content">
-                    <h3 class="ti">Title</h3>
+                    <h3 class="ti">Goals and Customer Focus</h3>
                     <!--<svg clip-rule="evenodd" fill-rule="evenodd" stroke-linejoin="round" stroke-miterlimit="2" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="m2 19v-14c0-.552.447-1 1-1 .542 0 4.418 2.028 9 2.028 4.593 0 8.456-2.028 9-2.028.55 0 1 .447 1 1v14c0 .553-.45 1-1 1-.544 0-4.407-2.028-9-2.028-4.582 0-8.458 2.028-9 2.028-.553 0-1-.448-1-1zm1.5-.791 6.449-7.691c.289-.344.879-.338 1.16.012 0 0 1.954 2.434 1.954 2.434l1.704-1.283c.319-.24.816-.168 1.054.154l4.679 6.335v-12.44c-1.58.58-4.819 1.798-8.5 1.798-3.672 0-6.918-1.218-8.5-1.799zm2.657-.834c1.623-.471 3.657-.903 5.843-.903 2.309 0 4.444.479 6.105.98l-3.041-4.117-1.065.802.275.344c.259.323.206.796-.117 1.054-.323.259-.795.207-1.054-.117l-2.591-3.236zm.698-9.534c-1.051 0-1.905.854-1.905 1.905s.854 1.904 1.905 1.904 1.904-.853 1.904-1.904-.853-1.905-1.904-1.905zm0 1.3c.333 0 .604.271.604.605 0 .333-.271.604-.604.604-.334 0-.605-.271-.605-.604 0-.334.271-.605.605-.605z" fill-rule="nonzero"></path></svg>-->
                   </div>
                 <div class="content">
-                  <p class="heading">Title</p>
-                  <p>
-                    Lorem ipsum dolor sit amet, consectetur adipii
-                    voluptas ten mollitia pariatur odit, ab
-                    minus ratione adipisci accusamus vel est excepturi laboriosam magnam
-                    necessitatibus dignissimos molestias.
-                  </p>
+                  <p class="heading">Goals and Customer Focus</p>
+                  <p class="td">BlueBest Trading aims to maximize availability of affordable and quality pharmaceutical products.</p>
+                  <p class="td">We prioritize long-term success by positioning brands effectively and constantly reviewing strategies.</p>
+                  <p class="td">We are committed to addressing shortage areas and maintaining a strong customer focus.</p>
                 </div>
               </div>
               </div>
@@ -241,17 +269,15 @@
               <div class="card-container2">
                 <div class="card2">
                   <div class="img-content">
-                    <h3 class="ti">Title</h3>
+                    <h3 class="ti">Professionalism, Reliability & Efficiency</h3>
                     <!--<svg clip-rule="evenodd" fill-rule="evenodd" stroke-linejoin="round" stroke-miterlimit="2" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="m2 19v-14c0-.552.447-1 1-1 .542 0 4.418 2.028 9 2.028 4.593 0 8.456-2.028 9-2.028.55 0 1 .447 1 1v14c0 .553-.45 1-1 1-.544 0-4.407-2.028-9-2.028-4.582 0-8.458 2.028-9 2.028-.553 0-1-.448-1-1zm1.5-.791 6.449-7.691c.289-.344.879-.338 1.16.012 0 0 1.954 2.434 1.954 2.434l1.704-1.283c.319-.24.816-.168 1.054.154l4.679 6.335v-12.44c-1.58.58-4.819 1.798-8.5 1.798-3.672 0-6.918-1.218-8.5-1.799zm2.657-.834c1.623-.471 3.657-.903 5.843-.903 2.309 0 4.444.479 6.105.98l-3.041-4.117-1.065.802.275.344c.259.323.206.796-.117 1.054-.323.259-.795.207-1.054-.117l-2.591-3.236zm.698-9.534c-1.051 0-1.905.854-1.905 1.905s.854 1.904 1.905 1.904 1.904-.853 1.904-1.904-.853-1.905-1.904-1.905zm0 1.3c.333 0 .604.271.604.605 0 .333-.271.604-.604.604-.334 0-.605-.271-.605-.604 0-.334.271-.605.605-.605z" fill-rule="nonzero"></path></svg>-->
                   </div>
                 <div class="content">
-                  <p class="heading">Title</p>
-                  <p>
-                    Lorem ipsum dolor sit amet, consectetur adipii
-                    voluptas ten mollitia pariatur odit, ab
-                    minus ratione adipisci accusamus vel est excepturi laboriosam magnam
-                    necessitatibus dignissimos molestias.
-                  </p>
+                  <p class="heading">Professionalism, Reliability & Efficiency</p>
+                  <p class="td">We a professional and reliable partner in the Ethiopian pharmaceutical industry.</p>
+                  <p class="td">our services range from commercial agency to product distribution, project management, and registration services.</p>
+                  <p class="td">With our offices strategically located across Ethiopia, they have a proven track record of creating market leaders.</p>
+              
                 </div>
               </div>
               </div>
@@ -273,13 +299,13 @@
                 <div class="container p-0">
                   <div class="row">
                     <div class="col-12">
-                      <img src="man.jpg" width="100%" height="auto" alt="">
+                      <img src="man2.jpg" width="100%" height="auto" alt="">
                     </div>
                   </div>
                   <div class="row pt-3 px-5 d-flex flex-column">
-                  <h2>name</h2>
-                  <p>Lorem ipsum dolor sit 
-                    </p>
+                  <h2>Shemsedin Mohammed</h2>
+                  <b>Managing Director
+                    </b>
                   </div>
                 </div>         
               
@@ -290,13 +316,13 @@
                 <div class="container p-0">
                   <div class="row">
                     <div class="col-12">
-                      <img src="man.jpg" width="100%" height="auto" alt="">
+                      <img src="man2.jpg" width="100%" height="auto" alt="">
                     </div>
                   </div>
                   <div class="row pt-3 px-5 d-flex flex-column">
-                  <h2>name</h2>
-                  <p>Lorem ipsum dolor sit 
-                    </p>
+                  <h2>Abdulhamid Ali</h2>
+                  <b>Operations Manager
+                    </b>
                   </div>
                 </div>
               
@@ -309,9 +335,9 @@
                     </div>
                   </div>
                   <div class="row pt-3 px-5 d-flex flex-column">
-                  <h2>name</h2>
-                  <p>Lorem ipsum dolor sit 
-                    </p>
+                  <h2>Hiwot Belay</h2>
+                  <b>Store Manager
+                    </b>
                   </div>
                 </div>
               
@@ -324,9 +350,9 @@
                     </div>
                   </div>
                   <div class="row pt-3 px-5 d-flex flex-column">
-                  <h2>name</h2>
-                  <p>Lorem ipsum dolor sit
-                    </p>
+                  <h2>Tofik Zeynu</h2>
+                  <b>Biomedical Engineer
+                    </b>
                   </div>
                 </div>
                 
@@ -416,10 +442,202 @@
 
 -->
 
+<!--vision mission-->
 
-     
+
+
+<hr class="featurette-divider">
+
+<div class="row featurette">
+  <div class="col-md-7">
+    <h2 class="featurette-heading f1">Mission.</h2>
+    <p class="lead p1">
+      Our mission is to provide our community with high-quality medications, medical devices, and laboratory reagents at affordable prices. We are committed to delivering superior customer service and conducting business with honesty and transparency. Our goals include preventing pharmaceutical shortages and building capabilities to elevate healthcare standards for future generations.
+
+
+    </p>
+  </div>
+  <div class="col-md-5">
+    <img class="featurette-image img-fluid mx-auto" src="mission.png" alt="Generic placeholder image">
+  </div>
+</div>
+
+<hr class="featurette-divider">
+<div class="row featurette">
+  <div class="col-md-7 order-md-2">
+    <h2 class="featurette-heading f1">Vision</h2>
+    <p class="lead p1">
+      Our vision is to be the preferred pharmaceutical distribution company and a leading brand in Ethiopia by 2027. We aim to supply high-quality medical devices and laboratory reagents at competitive prices while raising healthcare standards for future generations through trusted partnerships with pharmaceutical companies and healthcare professionals.
+    </p>
+  </div>
+  <div class="col-md-5 order-md-1">
+    <img class="featurette-image img-fluid mx-auto" src="vision.png" alt="Generic placeholder image">
+  </div>
+</div>
+
+<hr class="featurette-divider">
+
+<div class="row featurette">
+  <div class="col-md-7">
+    <h2 class="featurette-heading f1">Core Values.</h2>
+    <p class="lead p1">The foundation and the guiding principles that define our company's every activity, including the strategies used to fulfil our mission or vision and how our employees interact are:<b> Quality, Open to new opportunities, Professionalism, Transparency, Integrity, Partnership based of fairness</b></p>
+  </div>
+  <div class="col-md-5">
+    <img class="featurette-image img-fluid mx-auto" src="core value.png" alt="Generic placeholder image">
+  </div>
+</div>
+
+<hr class="featurette-divider">
+
+
+
+
     </main>
 
+    
+
+
+
+      <div class="pg-footer">
+          <footer class="footer">
+            <svg class="footer-wave-svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 100" preserveAspectRatio="none">
+              <path class="footer-wave-path" d="M851.8,100c125,0,288.3-45,348.2-64V0H0v44c3.7-1,7.3-1.9,11-2.9C80.7,22,151.7,10.8,223.5,6.3C276.7,2.9,330,4,383,9.8 c52.2,5.7,103.3,16.2,153.4,32.8C623.9,71.3,726.8,100,851.8,100z"></path>
+            </svg>
+            <div class="footer-content">
+
+              <div class="container-fluid p-0 m-0">
+                <div class="row p-4">
+                  <div class="col-sm-4">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d2624.764066114199!2d38.79762343660764!3d8.862865084129705!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2set!4v1688628685085!5m2!1sen!2set" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe> 
+                  </div>
+                  <div class="col-sm-4 d-flex flex-column pl-5 text-center">
+                    <h2>Address</h2>
+                    <ul class="">
+                      <li class="d-flex justify-content-center align-items-center flex-column">
+                      
+                            <ul>
+                              <li class="d-flex justify-content-center align-items-center">Addis Ababa City, Zip code 00251,</li>
+                              <li class="d-flex justify-content-center align-items-center">Kolife Keraniyo Sub City,</li>
+                              <li class="d-flex justify-content-center align-items-center">Wereda 6, Arround Bethel</li>
+                            </ul>
+                      </li>
+                      <li class="d-flex justify-content-center align-items-center flex-row">
+                        <span>
+                          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-telephone-fill" viewBox="0 0 16 16">
+                            <path fill-rule="evenodd" d="M1.885.511a1.745 1.745 0 0 1 2.61.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.678.678 0 0 0 .178.643l2.457 2.457a.678.678 0 0 0 .644.178l2.189-.547a1.745 1.745 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.634 18.634 0 0 1-7.01-4.42 18.634 18.634 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877L1.885.511z"/>
+                          </svg>
+                        </span>
+                        <span>
+                         +251-912-028-737
+                        </span>
+                      </li>
+                      <li class="d-flex justify-content-center align-items-center flex-row">
+                        <span>
+                          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-telephone-fill" viewBox="0 0 16 16">
+                            <path fill-rule="evenodd" d="M1.885.511a1.745 1.745 0 0 1 2.61.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.678.678 0 0 0 .178.643l2.457 2.457a.678.678 0 0 0 .644.178l2.189-.547a1.745 1.745 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.634 18.634 0 0 1-7.01-4.42 18.634 18.634 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877L1.885.511z"/>
+                          </svg>
+                        </span>
+                        <span>
+                          +251-903-242-524
+                        </span>
+                      </li>
+                      <li class="d-flex justify-content-center align-items-center flex-row">
+                        <span>
+                          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-envelope-fill" viewBox="0 0 16 16">
+                            <path d="M.05 3.555A2 2 0 0 1 2 2h12a2 2 0 0 1 1.95 1.555L8 8.414.05 3.555ZM0 4.697v7.104l5.803-3.558L0 4.697ZM6.761 8.83l-6.57 4.027A2 2 0 0 0 2 14h12a2 2 0 0 0 1.808-1.144l-6.57-4.027L8 9.586l-1.239-.757Zm3.436-.586L16 11.801V4.697l-5.803 3.546Z"/>
+                          </svg>
+                        </span>
+                        <span>
+                          <a href="#">info@bluebesttrading.com</a>
+                        </span>
+                      </li>
+                      <li class="d-flex justify-content-center align-items-center flex-row">
+                        <span>
+                          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-globe" viewBox="0 0 16 16">
+                            <path d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8zm7.5-6.923c-.67.204-1.335.82-1.887 1.855A7.97 7.97 0 0 0 5.145 4H7.5V1.077zM4.09 4a9.267 9.267 0 0 1 .64-1.539 6.7 6.7 0 0 1 .597-.933A7.025 7.025 0 0 0 2.255 4H4.09zm-.582 3.5c.03-.877.138-1.718.312-2.5H1.674a6.958 6.958 0 0 0-.656 2.5h2.49zM4.847 5a12.5 12.5 0 0 0-.338 2.5H7.5V5H4.847zM8.5 5v2.5h2.99a12.495 12.495 0 0 0-.337-2.5H8.5zM4.51 8.5a12.5 12.5 0 0 0 .337 2.5H7.5V8.5H4.51zm3.99 0V11h2.653c.187-.765.306-1.608.338-2.5H8.5zM5.145 12c.138.386.295.744.468 1.068.552 1.035 1.218 1.65 1.887 1.855V12H5.145zm.182 2.472a6.696 6.696 0 0 1-.597-.933A9.268 9.268 0 0 1 4.09 12H2.255a7.024 7.024 0 0 0 3.072 2.472zM3.82 11a13.652 13.652 0 0 1-.312-2.5h-2.49c.062.89.291 1.733.656 2.5H3.82zm6.853 3.472A7.024 7.024 0 0 0 13.745 12H11.91a9.27 9.27 0 0 1-.64 1.539 6.688 6.688 0 0 1-.597.933zM8.5 12v2.923c.67-.204 1.335-.82 1.887-1.855.173-.324.33-.682.468-1.068H8.5zm3.68-1h2.146c.365-.767.594-1.61.656-2.5h-2.49a13.65 13.65 0 0 1-.312 2.5zm2.802-3.5a6.959 6.959 0 0 0-.656-2.5H12.18c.174.782.282 1.623.312 2.5h2.49zM11.27 2.461c.247.464.462.98.64 1.539h1.835a7.024 7.024 0 0 0-3.072-2.472c.218.284.418.598.597.933zM10.855 4a7.966 7.966 0 0 0-.468-1.068C9.835 1.897 9.17 1.282 8.5 1.077V4h2.355z"/>
+                          </svg>
+                        </span>
+                        <span>
+                          <a href="#">https://www.bluebesttrading.com</a>
+                        </span>
+                      </li>
+               
+                  
+        
+
+                    </ul>
+                  </div>
+                  <div class="col-sm-3 d-flex pt-3 align-items-center flex-column">
+                    <h6>LET'S CHAT</h6>
+                   <a id="showpopup" href="#hided"> <button class="button2" style="height: 40px;"><span class="button2-content">GET IN TOUCH</span></button></a>
+                    
+
+                  </div>
+                </div>
+              </div>
+
+
+              
+              <div class="footer-social-links">
+                 <svg class="footer-social-amoeba-svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 236 54">
+                  <path class="footer-social-amoeba-path" d="M223.06,43.32c-.77-7.2,1.87-28.47-20-32.53C187.78,8,180.41,18,178.32,20.7s-5.63,10.1-4.07,16.7-.13,15.23-4.06,15.91-8.75-2.9-6.89-7S167.41,36,167.15,33a18.93,18.93,0,0,0-2.64-8.53c-3.44-5.5-8-11.19-19.12-11.19a21.64,21.64,0,0,0-18.31,9.18c-2.08,2.7-5.66,9.6-4.07,16.69s.64,14.32-6.11,13.9S108.35,46.5,112,36.54s-1.89-21.24-4-23.94S96.34,0,85.23,0,57.46,8.84,56.49,24.56s6.92,20.79,7,24.59c.07,2.75-6.43,4.16-12.92,2.38s-4-10.75-3.46-12.38c1.85-6.6-2-14-4.08-16.69a21.62,21.62,0,0,0-18.3-9.18C13.62,13.28,9.06,19,5.62,24.47A18.81,18.81,0,0,0,3,33a21.85,21.85,0,0,0,1.58,9.08,16.58,16.58,0,0,1,1.06,5A6.75,6.75,0,0,1,0,54H236C235.47,54,223.83,50.52,223.06,43.32Z"></path>
+                </svg>
+                <a class="footer-social-link instagram" href="#">
+                  <svg class="footer-social-icon-svg" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="#fff" class="bi bi-instagram" viewBox="0 0 16 16">
+                    <path d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.917 3.917 0 0 0-1.417.923A3.927 3.927 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.916 3.916 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.926 3.926 0 0 0-.923-1.417A3.911 3.911 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0h.003zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599.28.28.453.546.598.92.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.47 2.47 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.478 2.478 0 0 1-.92-.598 2.48 2.48 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233 0-2.136.008-2.388.046-3.231.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92.28-.28.546-.453.92-.598.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045v.002zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92zm-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217zm0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334z"/>
+                  </svg>
+                </a>
+                <a class="footer-social-link twitter" href="#">
+                  <svg class="footer-social-icon-svg" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="#fff" class="bi bi-tiktok" viewBox="0 0 16 16">
+                    <path d="M9 0h1.98c.144.715.54 1.617 1.235 2.512C12.895 3.389 13.797 4 15 4v2c-1.753 0-3.07-.814-4-1.829V11a5 5 0 1 1-5-5v2a3 3 0 1 0 3 3V0Z"/>
+                  </svg></a>
+
+                  <a class="footer-social-link tictok" href="#">
+                    <svg class="footer-social-icon-svg" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="#fff" class="bi bi-facebook" viewBox="0 0 16 16">
+                      <path d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951z"/>
+                    </svg>  </a>
+                  <a class="footer-social-link facebook" href="#">
+                    <svg class="footer-social-icon-svg" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="#fff" class="bi bi-twitter" viewBox="0 0 16 16">
+                      <path d="M5.026 15c6.038 0 9.341-5.003 9.341-9.334 0-.14 0-.282-.006-.422A6.685 6.685 0 0 0 16 3.542a6.658 6.658 0 0 1-1.889.518 3.301 3.301 0 0 0 1.447-1.817 6.533 6.533 0 0 1-2.087.793A3.286 3.286 0 0 0 7.875 6.03a9.325 9.325 0 0 1-6.767-3.429 3.289 3.289 0 0 0 1.018 4.382A3.323 3.323 0 0 1 .64 6.575v.045a3.288 3.288 0 0 0 2.632 3.218 3.203 3.203 0 0 1-.865.115 3.23 3.23 0 0 1-.614-.057 3.283 3.283 0 0 0 3.067 2.277A6.588 6.588 0 0 1 .78 13.58a6.32 6.32 0 0 1-.78-.045A9.344 9.344 0 0 0 5.026 15z"/>
+                    </svg>
+                    </a>
+              </div>
+            </div>
+            <div class="footer-copyright">
+              <div class="footer-copyright-wrapper">
+                <p class="footer-copyright-text">
+                  <a class="footer-copyright-link" href="#" target="_self"> ©2023. | Designed By: MINA. | All rights reserved. </a>
+                </p>
+              </div>
+            </div>
+          </footer>
+        </div>
+
+<!--pop up-->
+        <div class="container p-0 mt-2 contact-bg" id="hided">
+          <div class="row" id="popup_box">
+              <div class="col-12 d-flex justify-content-end align-items-center">
+                  <a id="buttonClose">
+                      <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="50" height="50" viewBox="0 0 50 50">
+                          <path d="M25,2C12.319,2,2,12.319,2,25s10.319,23,23,23s23-10.319,23-23S37.681,2,25,2z M33.71,32.29c0.39,0.39,0.39,1.03,0,1.42	C33.51,33.9,33.26,34,33,34s-0.51-0.1-0.71-0.29L25,26.42l-7.29,7.29C17.51,33.9,17.26,34,17,34s-0.51-0.1-0.71-0.29	c-0.39-0.39-0.39-1.03,0-1.42L23.58,25l-7.29-7.29c-0.39-0.39-0.39-1.03,0-1.42c0.39-0.39,1.03-0.39,1.42,0L25,23.58l7.29-7.29	c0.39-0.39,1.03-0.39,1.42,0c0.39,0.39,0.39,1.03,0,1.42L26.42,25L33.71,32.29z"></path>
+                      </svg>
+                  </a> 
+              </div>
+          </div>
+          <div class="row mt-5 justify-content-center" id="hider">
+              <div class="col-6 d-flex justify-content-center align-items-center">
+                  <form class="form">
+                      <ul class="wrapper">
+                        <li style="--i:4;"><input class="text-white input" type="text" placeholder="Name" required=""></li>
+                        <li style="--i:3;"><textarea class="text-white input" placeholder="Message" required="" name="phone" style="height: 80px;"></textarea></li>
+                        <li style="--i:2;"><input class="text-white input" type="email" placeholder="E-mail" required="" name="email"></li>
+                        <button class="butt" style="--i:1;">Submit</button>
+                      </ul>
+                  </form>
+              </div>
+              
+          </div>
+      </div>
     <script>
       
       var animation1 = bodymovin.loadAnimation({
@@ -454,6 +672,14 @@
          path: 'data2.json'
       });
 
+      var animation3 = bodymovin.loadAnimation({
+         container: document.getElementById('lottie-container4'),
+         renderer: 'svg',
+         loop: true,
+         autoplay: true,
+         path: 'data3.json'
+      });
+
       /*animation4.addEventListener('DOMLoaded', function() {
   animation4.goToAndPlay(100, true); // move to frame 10 and start playing from there
 });*/
@@ -468,7 +694,7 @@
 <script src="observer.js"></script>
 <script src="c.js"></script>
     
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    
 <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 </body>
