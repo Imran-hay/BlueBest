@@ -295,6 +295,9 @@ body{
 /* #Welcome-bg{
   background-color: #FBFBFF;
 } */
+#welcome{
+  height: 90vh !important;
+}
 
 @keyframes anim {
   0%   {left:-100%;}

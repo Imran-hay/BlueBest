@@ -25,6 +25,12 @@
 <link href="carousel.css" rel="stylesheet">
 <script src="https://cdnjs.cloudflare.com/ajax/libs/bodymovin/5.12.2/lottie.min.js" integrity="sha512-jEnuDt6jfecCjthQAJ+ed0MTVA++5ZKmlUcmDGBv2vUI/REn6FuIdixLNnQT+vKusE2hhTk2is3cFvv5wA+Sgg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
    
+  <style>
+    #hov > a:hover{
+      background-color: none !important;
+      color: black !important;
+    }
+  </style>
 
     <title>BlueBestTrading</title>
 
@@ -47,7 +53,7 @@
   </svg>
 
     <header>
-      Ale, [7/5/2023 7:00 PM]
+    
       <nav class="navbar fixed-top navbar-expand-lg navbar-light nav-bg">
                   <a class="navbar-brand" href="#"><img class="img" src="plan.png" alt="" srcset=""></a>
                   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -59,8 +65,18 @@
                       <li class="nav-item">
                         <a class="nav-link d-flex align-items-center button mr-lg-3" href="#"><span class="button-content">Home</span></a>
                       </li>
-                      <li class="nav-item">
-                        <a class="nav-link d-flex align-items-center button mr-lg-3" href="#"> <span class="button-content">About Us</span></a>
+              
+                      <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle d-flex align-items-center button mr-lg-3" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                          <span class="button-content">About Us</span>
+                          
+                        </a>
+                        <div class="dropdown-menu bg-dark" id="hov" aria-labelledby="navbarDropdown">
+                          <a class="dropdown-item" href="#">Why work with us</a>
+                          <a class="dropdown-item" href="#">What we do</a>
+                          <div class="dropdown-divider"></div>
+                          <a class="dropdown-item" href="#">Mission, Vision, Core values</a>
+                        </div>
                       </li>
                       <li class="nav-item">
                         <a class="nav-link d-flex align-items-center button mr-lg-3" href="#"> <span class="button-content">Our Team</span></a>
@@ -84,7 +100,7 @@
                         <a class="social-link nav-link" href="#">
                           <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" fill="#3f51b5" class="bi bi-facebook" viewBox="0 0 16 16">
       
-      Ale, [7/5/2023 7:00 PM]
+      
       <path d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951z"/>
                           </svg>  </a>
                         <a class="social-link nav-link" href="#">
@@ -183,7 +199,7 @@
       
       <!--Welcome Page-->
 
-      <div class="container-fluid animated-text" id="welcome">
+      <div class="container-fluid animated-text my-5" id="welcome">
         <div class="row">
            <div class="col-lg-6 order-lg-2" id="anim">
           </div>
@@ -196,7 +212,12 @@
 
       <!-- why work with us -->
       <div class="container">
-        <div class="row justify-content-center">
+        <div class="row">
+          <div class="col-12 text-center">
+            <h1>Our Services</h1>
+          </div>
+        </div>
+        <div class="row justify-content-center mt-5">
           <div class="col-md-6 col-12">
             <div class="card10">
               <a class="d-flex flex-column"><span>Business operations</span><span class="d-none">BlueBest Trading serves the Ethiopian market through import, distribution, marketing, and tendering agency. We have partnerships with renowned pharmaceutical manufacturers and seek additional suppliers globally.</span></a>
@@ -286,86 +307,93 @@
 </div>
 
 <!--circular crousal-->
-<div class="container d-flex justify-content-center">
-
-
-    <div class="content-block content-block--circular-carousal">
-      <div class="grid-container">
-        <div class="grid-row">
-          <div class="grid-cell-4of4--phone">
-            <div class="circular-carousal">
-              <div class="circular-carousal--image">
-              
-                <div class="container p-0">
-                  <div class="row">
-                    <div class="col-12">
-                      <img src="man2.jpg" width="100%" height="auto" alt="">
-                    </div>
-                  </div>
-                  <div class="row pt-3 px-5 d-flex flex-column">
-                  <h2>Shemsedin Mohammed</h2>
-                  <b>Managing Director
-                    </b>
-                  </div>
-                </div>         
-              
+<div class="container">
+    <div class="row mb-5">
+      <div class="col-12">
+        <h1 class="text-center">Our team</h1>
+      </div>
+    </div>
+    <div class="row">
+      <div class="content-block content-block--circular-carousal">
+        <div class="grid-container">
+          <div class="grid-row">
+            <div class="grid-cell-4of4--phone">
+              <div class="circular-carousal">
+                <div class="circular-carousal--image">
                 
-              </div>
-              
-              <div class="circular-carousal--image">
-                <div class="container p-0">
-                  <div class="row">
-                    <div class="col-12">
-                      <img src="man2.jpg" width="100%" height="auto" alt="">
+                  <div class="container p-0">
+                    <div class="row">
+                      <div class="col-12">
+                        <img src="man2.jpg" width="100%" height="auto" alt="">
+                      </div>
                     </div>
-                  </div>
-                  <div class="row pt-3 px-5 d-flex flex-column">
-                  <h2>Abdulhamid Ali</h2>
-                  <b>Operations Manager
-                    </b>
-                  </div>
-                </div>
-              
-              </div>
-              <div class="circular-carousal--image image2">
-                <div class="container p-0">
-                  <div class="row">
-                    <div class="col-12">
-                      <img src="man.jpg" width="100%" height="auto" alt="">
+                    <div class="row pt-3 my-3 d-flex flex-column">
+                    <h3 class="text-center">Shemsedin Mohammed</h3>
+                    <b class="text-center">Managing Director
+                      </b>
                     </div>
-                  </div>
-                  <div class="row pt-3 px-5 d-flex flex-column">
-                  <h2>Hiwot Belay</h2>
-                  <b>Store Manager
-                    </b>
-                  </div>
-                </div>
-              
-              </div>
-              <div class="circular-carousal--image">
-                <div class="container p-0">
-                  <div class="row">
-                    <div class="col-12">
-                      <img src="man.jpg" width="100%" height="auto" alt="">
-                    </div>
-                  </div>
-                  <div class="row pt-3 px-5 d-flex flex-column">
-                  <h2>Tofik Zeynu</h2>
-                  <b>Biomedical Engineer
-                    </b>
-                  </div>
+                  </div>         
+                
+                  
                 </div>
                 
-              </div>
-            
+                <div class="circular-carousal--image">
+                  <div class="container p-0">
+                    <div class="row">
+                      <div class="col-12">
+                        <img src="man2.jpg" width="100%" height="auto" alt="">
+                      </div>
+                    </div>
+                    <div class="row pt-3 my-3 d-flex flex-column">
+                    <h2 class="text-center">Abdulhamid Ali</h2>
+                    <b class="text-center">Operations Manager
+                      </b>
+                    </div>
+                  </div>
+                
+                </div>
+                <div class="circular-carousal--image image2">
+                  <div class="container p-0">
+                    <div class="row">
+                      <div class="col-12">
+                        <img src="man.jpg" width="100%" height="auto" alt="">
+                      </div>
+                    </div>
+                    <div class="row pt-3 my-3 d-flex flex-column">
+                    <h2 class="text-center">Hiwot Belay</h2>
+                    <b class="text-center">Store Manager
+                      </b>
+                    </div>
+                  </div>
+                
+                </div>
+                <div class="circular-carousal--image">
+                  <div class="container p-0">
+                    <div class="row">
+                      <div class="col-12">
+                        <img src="man.jpg" width="100%" height="auto" alt="">
+                      </div>
+                    </div>
+                    <div class="row pt-3 my-3 d-flex flex-column">
+                    <h2 class="text-center">Tofik Zeynu</h2>
+                    <b class="text-center">Biomedical Engineer
+                      </b>
+                    </div>
+                  </div>
+                  
+                </div>
               
+                
+                </div>
               </div>
             </div>
           </div>
         </div>
-      </div>
     </div>
+    
+    
   </div>  
+  
 
 <!--<div class="content-block content-block--circular-carousal">
   <div class="grid-container">
