@@ -6,8 +6,20 @@ html{
 }
 
 body{
+  margin: 0;
+  padding: 0;
+  display:flex;
+  flex-direction:column;
+
+  /* fallback height */
+  min-height:100vh;
+
+  /* new small viewport height for modern browsers */
+  min-height:100svh;
+ 
   font-family: 'Poppins' !important;
   background-color: whitesmoke;
+  height: 100%;
 }
 .img{
   height:48px;
@@ -298,9 +310,7 @@ body{
 /* #Welcome-bg{
   background-color: #FBFBFF;
 } */
-#welcome{
-  height: 90vh !important;
-}
+
 
 @keyframes anim {
   0%   {left:-100%;}
@@ -346,8 +356,8 @@ body{
   padding: 30px;
 }
 .card-container2 {
-  width:330px;
-  height: 420px;
+  width: 350px;
+  height: 400px;
   /*position: relative;*/
   border-radius: 20px;
   margin: 0 auto;
@@ -446,12 +456,14 @@ body{
 
   color: #e8e8e8;
   text-align: center;
-  
+  width: 100%;
 }
 .td {
+  min-width: 20em;
+  padding: .5em;
   text-align: center;
-  align-items: center;
-  
+  color: white;
+  letter-spacing: .1em;
 }
 /*
 @media only screen and (max-width: 768px) {
@@ -482,11 +494,9 @@ body{
 .circular-carousal {
   display: flex;
   justify-content: center;
-  width: 100%;
- 
-  margin : 0 auto;
+
   
-  perspective: 1050px;
+  perspective: 850px;
   perspective-origin: 50% 50%;
   
   .circular-carousal--image {
@@ -660,6 +670,7 @@ body{
 
 }
 
+@media only screen and (min-width: 768px) {
 .card10 a span:nth-child(1) {
   min-width: 18em;
   padding: .5em;
@@ -671,6 +682,34 @@ body{
   letter-spacing: .1em;
  
 }
+}
+
+@media only screen and (max-width: 767px) {
+  .card10 a span:nth-child(1) {
+    min-width: 15em;
+    padding: .5em;
+    text-align: center;
+    transform: rotate(0);
+    transition: all .8s;
+    text-transform: uppercase;
+    color: white;
+    letter-spacing: .1em;
+   
+  }
+}
+
+@media only screen and (max-width: 550px) {
+  .card10 {
+    width: 100%;
+    height: 600px;
+    border-radius: 4px;
+    background: #0B476C;
+    display: flex;
+    gap: 5px;
+    padding: .4em;
+  }
+}
+
 
 .card10 a:hover span:nth-child(1){
   transform: rotate(0);
@@ -687,29 +726,21 @@ body{
   color: white;
 }
 
-
-
 /*for the pop up form */
 #hider
 {
 height: 50vh;
-top: 0%;
 /*
 z- index must be lower than pop up box
 */
 z-index: 99;
-
 }
 
 
 .contact-bg{
-position: absolute; 
-left: 0; 
-right: 0; 
-margin-top: 50px;
 margin-left: auto;
 margin-right: auto;
-width: 30%;
+width: 50%;
 background-color: #eee;
 border-radius: 25px;
 
@@ -867,14 +898,14 @@ a {
   color: #fff;
   text-decoration: none;
 }
-.pg-footer {
-  font-family: 'Roboto', sans-serif;
-}
+
 
 
 .footer {
     background-color: #004658;
     color: #fff;
+    margin-top:auto;
+    width: 100%;
 }
 .footer-wave-svg {
     background-color: transparent;
@@ -906,7 +937,6 @@ a {
     height: 54px;
     left: 0;
     display: block;
-   
     top: 0;
     width: 236px;
 }
@@ -999,6 +1029,20 @@ a {
     text-decoration: none;
 }
 
+@media (max-width:759px)  { /* smartphones, portrait iPhone, portrait 480x320 phones (Android) */
+  .footer-content {
+     
+    position: relative;
+}
+  .footer-wave-svg {
+    height: 50px;
+}
+
+.footer-content-column {
+    width: 24.99%;
+}
+}
+
 
 
 
@@ -1038,7 +1082,7 @@ a {
 .progress-wrap {
 	position: fixed;
 	right: 50px;
-	bottom: 50px;
+	bottom: 100px;
 	height: 46px;
 	width: 46px;
 	cursor: pointer;
@@ -1065,7 +1109,7 @@ a {
 	line-height: 46px;
 	font-size: 24px;
   /*color: var(--grey);*/
-	color:grey;
+	color:#cc1f1f;
 	left: 0;
 	top: 0;
 	height: 46px;
@@ -1108,7 +1152,7 @@ a {
 	fill: none; 
 }
 .progress-wrap svg.progress-circle path {
-	stroke: grey;
+	stroke: #cc1f1f;
   /*stroke: var(--grey);*/
 	stroke-width: 4;
 	box-sizing:border-box;

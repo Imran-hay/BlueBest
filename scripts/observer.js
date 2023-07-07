@@ -2,7 +2,7 @@
 const target = document.querySelector('.animated-text');
 
 const options = {
-    threshold: 0.75,
+    threshold: 0.8,
   }
 
 // Next we want to create a function that will be called when that element is intersected
