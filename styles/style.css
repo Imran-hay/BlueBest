@@ -69,7 +69,7 @@ body{
 }
 
 .active-bg{
-  background-color: #e34a21 !important;
+  background-color: #267326 !important;
 }
 
 @media screen and (min-width: 992px) {
@@ -378,14 +378,14 @@ body{
 /*   background-color:whitesmoke; */
   border-radius: 20px;
 }
-.parent {
+/* .parent {
 
   /*display: grid;
   grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); /* adjust the minimum width of each column as needed */
   /*grid-gap: 200px;*/ /* adjust the gap between sub-elements as needed */
  
 
-}
+/* } */ 
 .card-container2 {
   width: 100%;
   height: 550px;
@@ -567,21 +567,21 @@ body{
   .circular-carousal .circular-carousal--image.left {
     transform: rotateY(-25deg) scale(0.7, 0.7);
     order: 2;
-    width: 400px;
-    height: 270px;
+    width: 350px;
+    height: 450px;
   }
 
   .circular-carousal .circular-carousal--image.center {
     order: 3;
-    width: 400px;
-    height: 270px;
+    width: 350px;
+    height: 450px;
   }
 
   .circular-carousal .circular-carousal--image.right {
     transform: rotateY(25deg) scale(0.7, 0.7);
     order: 4;
-    width: 400px;
-    height: 270px;
+    width: 350px;
+    height: 450px;
   }
   .circular-carousal .circular-carousal--image.far-right {
     transform: rotateY(35deg) scale(0.5, 0.5);
@@ -605,20 +605,20 @@ body{
     transform: rotateY(-25deg) scale(0.7, 0.7);
     order: 2;
     width: 350px;
-    height: 240px;
+    height: 430px;
   }
 
   .circular-carousal .circular-carousal--image.center {
     order: 3;
     width: 350px;
-    height: 240px;
+    height: 430px;
   }
 
   .circular-carousal .circular-carousal--image.right {
     transform: rotateY(25deg) scale(0.7, 0.7);
     order: 4;
     width: 350px;
-    height: 240px;
+    height: 430px;
   }
   .circular-carousal .circular-carousal--image.far-right {
     transform: rotateY(35deg) scale(0.5, 0.5);
@@ -640,20 +640,20 @@ body{
     transform: rotateY(-25deg) scale(0.7, 0.7);
     order: 2;
     width: 350px;
-    height: 210px;
+    height: 380px;
   }
 
   .circular-carousal .circular-carousal--image.center {
     order: 3;
     width: 350px;
-    height: 210px;
+    height: 380px;
   }
 
   .circular-carousal .circular-carousal--image.right {
     transform: rotateY(25deg) scale(0.7, 0.7);
     order: 4;
     width: 350px;
-    height: 210px;
+    height: 380px;
   }
   .circular-carousal .circular-carousal--image.far-right {
     transform: rotateY(35deg) scale(0.5, 0.5);
@@ -674,21 +674,21 @@ body{
   .circular-carousal .circular-carousal--image.left {
     transform: rotateY(-25deg) scale(0.7, 0.7);
     order: 2;
-    width: 400px;
-    height: 190px;
+    width: 430px;
+    height: 330px;
   }
 
   .circular-carousal .circular-carousal--image.center {
     order: 3;
-    width: 400px;
-    height: 190px;
+    width: 430px;
+    height: 330px;
   }
 
   .circular-carousal .circular-carousal--image.right {
     transform: rotateY(25deg) scale(0.7, 0.7);
     order: 4;
-    width: 400px;
-    height: 190px;
+    width: 430px;
+    height: 330px;
   }
   .circular-carousal .circular-carousal--image.far-right {
     transform: rotateY(35deg) scale(0.5, 0.5);
@@ -916,7 +916,7 @@ z-index: 99;
 margin-left: auto;
 margin-right: auto;
 width: 50%;
-background-color: #eee;
+background-image: linear-gradient(180deg, #0b476c, #53ce53);
 border-radius: 25px;
 
 
@@ -932,6 +932,13 @@ z-index:100;
 
 }
 
+.contact-h{
+display: none;
+}
+
+.contact-b{
+  display: inline;
+  }
 
 /* you can choose any color you want. don't be afraid to experiment  */
 
@@ -1805,3 +1812,20 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   opacity: 0;
   transform-origin: center center;
 }
+
+
+.iframe-container {
+  position: relative;
+  width: 100%;
+  height: 0;
+  padding-bottom: 56.25%; /* Set the aspect ratio based on your iframe */
+}
+
+.iframe-container > iframe,
+.iframe-container > p {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+ }

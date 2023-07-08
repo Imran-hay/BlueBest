@@ -105,3 +105,31 @@ atarget.forEach(function (i) {
 
 });
 /* about us */
+
+/*our team*/
+const ttarget = document.querySelector('.our-team');
+function handleIntersection4(entries) {
+  entries.map((entry) => {
+    if (entry.isIntersecting) {
+      document.getElementById("team-active").classList.add('active-bg');
+    } else {
+      document.getElementById("team-active").classList.remove('active-bg');
+    }
+  });
+}
+const tobserver = new IntersectionObserver(handleIntersection4,aoptions);
+tobserver.observe(ttarget);
+
+/*contact*/
+const ctarget = document.querySelector('.contact');
+function handleIntersection5(entries) {
+  entries.map((entry) => {
+    if (entry.isIntersecting) {
+      document.getElementById("contact-active").classList.add('active-bg');
+    } else {
+      document.getElementById("contact-active").classList.remove('active-bg');
+    }
+  });
+}
+const cobserver = new IntersectionObserver(handleIntersection5,aoptions);
+cobserver.observe(ctarget);

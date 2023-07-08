@@ -16,20 +16,18 @@
   <!--<link href="./libraries/dist/css/bootstrap.min.css" rel="stylesheet">-->
   <link rel='stylesheet' href='https://s3-us-west-2.amazonaws.com/s.cdpn.io/1462889/unicons.css'>
 
-  <!-- for wow -->
-  <script src='//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
-<script src='//cdnjs.cloudflare.com/ajax/libs/gsap/1.18.0/TweenMax.min.js'></script>
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+  <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/css/bootstrap.min.css'>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins">
 
-    
-    <title>BlueBestTrading</title>
+  <!-- for wow -->
+  <title>BlueBestTrading</title>
 
 </head>
 <body>
     <header>
     
       <nav class="navbar fixed-top navbar-expand-lg navbar-light nav-bg">
-                  <a class="navbar-brand" href="#"><img class="img" src="./images/logo 5.jpg" alt="" srcset=""></a>
+                  <a class="navbar-brand" href="#"><img class="img" src="./images/logo3.png" alt="" srcset=""></a>
                   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                   </button>
@@ -53,10 +51,10 @@
                         </div>
                       </li>
                       <li class="nav-item">
-                        <a class="nav-link d-flex align-items-center button mr-lg-3" href="#ot"> <span class="button-content">Our Team</span></a>
+                        <a class="nav-link d-flex align-items-center button mr-lg-3" id="team-active" href="#ot"> <span class="button-content">Our Team</span></a>
                       </li>
                       <li class="nav-item">
-                          <a class="nav-link d-flex align-items-center button mr-lg-3" href="#hided"> <span class="button-content">Contact Us</span></a>
+                          <a class="nav-link d-flex align-items-center button mr-lg-3" id="contact-active" href="#hided"> <span class="button-content">Contact Us</span></a>
                         </li>
                     </ul>
                       <div class="card d-flex flex-row">
@@ -227,7 +225,7 @@
       
 
       <!--cards-->
-      <div class="parent container-fluid text-non about-us" id="ww">
+      <div class="parent container-fluid text-non about-us mb-5" id="ww">
 
         <div class="row d-flex text-center justify-content-center mb-5">
           <div class="col-12">
@@ -263,7 +261,7 @@
               </div>
             </div>
 
-            <div class="col-lg-3 col-10 why-bg mr-lg-4 mb-4 mb-lg-0 about-us">
+            <div class="col-lg-3 col-10 why-bg mr-lg-4 mb-4 mb-lg-0">
               <div class="card-container2">
                 <div class="card2">
                   <div class="img-content">
@@ -280,7 +278,7 @@
               </div>
             </div>
 
-            <div class="col-lg-3 col-10 why-bg about-us">
+            <div class="col-lg-3 col-10 why-bg">
               <div class="card-container2">
                 <div class="card2">
                   <div class="img-content">
@@ -301,38 +299,43 @@
 </div>
 
 <!--circular crousal-->
-<div class="container text-non" id="ot">
-    <div class="row mb-5">
+<div class="container-fluid text-non mt-5 pt-5 our-team" id="ot">
+    <div class="row">
       <div class="col-12">
         <div class="background-color11">
-        <h1 class="text-center">Our team</h1>
+        <h1 class="text-center mb-5">Our team</h1>
       </div>
       </div>
     </div>
     <div class="row">
-      
+      <div class="col-12">
         <div class="content-block content-block--circular-carousal">
           <div class="grid-container">
             <div class="grid-row">
               <div class="grid-cell-4of4--phone">
                 <div class="circular-carousal d-flex justify-content-center">
                   <div class="circular-carousal--image">
-                    <img src="http://placekitten.com/400/200" alt="" />
+                    <img src="images/m.png" alt="" />
                     <h4 class="text-center">Abdulhamid Ali</h4>
                     <p class="text-center py-0 mb-0">Operations Manager</p>
                   </div>
                   <div class="circular-carousal--image">
-                    <img src="http://placekitten.com/400/200" alt="" />
+                    <img src="images/f.png" alt="" />
                     <h4 class="text-center">Hiwot Belay</h4>
                     <p class="text-center py-0 mb-0">Store Manager</p>
                   </div>
                   <div class="circular-carousal--image image2">
-                    <img src="http://placekitten.com/400/200" alt="" />
+                    <img src="images/m.png" alt="" />
                     <h4 class="text-center">Tofik Zeynu</h4>
                     <p class="text-center py-0 mb-0">Biomedical Engineer</p>
                   </div>
                   <div class="circular-carousal--image">
-                    <img src="http://placekitten.com/400/200" alt="" />
+                    <img src="images/m.png" alt="" />
+                    <h4 class="text-center">Shemsedin Mohammed</h4>
+                    <p class="text-center py-0">Managing Director</p>
+                  </div>
+                  <div class="circular-carousal--image">
+                    <img src="images/m.png" alt="" />
                     <h4 class="text-center">Shemsedin Mohammed</h4>
                     <p class="text-center py-0">Managing Director</p>
                   </div>
@@ -343,6 +346,9 @@
         </div>
     </div>
     
+
+      </div>
+        
     
   </div>  
   
@@ -354,7 +360,7 @@
 
 <hr class="featurette-divider">
 
-<div class="row featurette" id="mvc">
+<div class="row featurette about-us" id="mvc">
   <div class="col-md-7">
     <h2 class="featurette-heading f1">Mission.</h2>
     <p class="lead p1">
@@ -369,7 +375,7 @@
 </div>
 
 <hr class="featurette-divider">
-<div class="row featurette">
+<div class="row featurette about-us">
   <div class="col-md-7 order-md-2">
     <h2 class="featurette-heading f1">Vision</h2>
     <p class="lead p1">
@@ -383,7 +389,7 @@
 
 <hr class="featurette-divider">
 
-<div class="row featurette">
+<div class="row featurette about-us">
   <div class="col-md-7">
     <h2 class="featurette-heading f1">Core Values.</h2>
     <p class="lead p1">The foundation and the guiding principles that define our company's every activity, including the strategies used to fulfil our mission or vision and how our employees interact are:<b> Quality, Open to new opportunities, Professionalism, Transparency, Integrity, Partnership based of fairness</b></p>
@@ -406,7 +412,12 @@
           </a> 
       </div>
   </div>
-  <div class="row mt-5 justify-content-center" id="hider">
+  <div class="row" id="contact-header">
+    <div class="col-12">
+      <h2 class="text-center">Send us a message</h2>
+    </div>
+  </div>
+  <div class="row mt-5 justify-content-center contact" id="hider">
       <div class="col-4 d-flex justify-content-center align-items-center">
           <form class="form">
               <ul class="wrapper">
@@ -440,11 +451,14 @@
               <div class="container-fluid p-0 m-0">
                 <div class="row p-4 justify-content-center">
                   <div class="col-lg-4 col-8">
-                    <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d2624.764066114199!2d38.79762343660764!3d8.862865084129705!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2set!4v1688628685085!5m2!1sen!2set" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe> 
+                 
+                      <!-- <p id="alt-text">Your browser does not support iframes or there was an error loading the content.</p>
+                      --> <iframe id="iframe" src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d2624.764066114199!2d38.79762343660764!3d8.862865084129705!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2set!4v1688628685085!5m2!1sen!2set" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" onerror="showAltText()"></iframe> 
+                    
                   </div>
                   <div class="col-lg-4 d-flex flex-column pl-5 pt-3 text-center">
                     <h2>Address</h2>
-                    <ul class="">
+                    <ul>
                       <li class="d-flex justify-content-center align-items-center flex-column">
                       
                             <ul>
@@ -605,12 +619,10 @@
 
 
 
-<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins">
 <link rel="canonical" href="https://getbootstrap.com/docs/4.0/examples/carousel/">
 
-<link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/css/bootstrap.min.css'>
 
-<script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.0/jquery.min.js'></script>
+
 
 
 
@@ -629,7 +641,8 @@
 
 <script src="./scripts/observer.js"></script>
 <script src="./scripts/c.js"></script>
-<script src="./scripts/b.js"></script>
+<!-- <script src="./scripts/b.js"></script>
+<script src="./scripts/iframe.js"></script> -->
 
 <script  src="./script/team-script.js"></script>    
     
