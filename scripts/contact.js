@@ -7,6 +7,7 @@ $(document).ready(function () {
     $("#showpopup").click(function () {
         $("#hider").fadeIn("slow");
         $('#popup_box').fadeIn("slow");
+      
        /* $('.con').css("height","30vh");  */
     });
     //on click hide the message and the
@@ -14,6 +15,9 @@ $(document).ready(function () {
 
         $("#hider").fadeOut("slow");
         $('#popup_box').fadeOut("slow");
+        const x = document.getElementById("cbg");
+        x.classList.remove("box");
+      
        /*  $('.con').css("height","10vh"); */
     });
 

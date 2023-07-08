@@ -1256,3 +1256,377 @@ body.light .progress-wrap svg.progress-circle path {
 .switched .circle:after {
 	opacity: 1;
 }
+
+
+/*for colorful text */
+
+.background-color11 h1 {
+  color: #000;
+  font-size: 3vw;
+  font-weight: bold;
+  letter-spacing: 0.8vw;
+ 
+  background: rgba(255, 253, 160, 1);
+  background: -webkit-linear-gradient( left, #00ffff 0%, #97fba0 25%, blue 50%, #00ffff 100%) repeat;
+  -webkit-background-clip: text;
+  -ms-background-clip: text;
+  -moz-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -ms-text-fill-color: transparent;
+  -moz-text-fill-color: transparent;
+  text-fill-color: transparent;
+  -webkit-animation-name: masked-animation;
+  -webkit-animation-duration: 50s;
+  -webkit-animation-iteration-count: infinite;
+  -webkit-animation-timing-function: linear;
+}
+
+@-webkit-keyframes masked-animation {
+  0% {
+    background-position: 0 0;
+  }
+  100% {
+    background-position: -8000px -3000px;
+  }
+}
+
+
+/* color on hover */
+p {
+  font-weight: 500;
+  font-size: 1.1em;
+}
+p span {
+  transition: color 3s;
+  transition-delay: 1s;
+  /*letter-spacing: -0.2vw;*/
+}
+
+p span:hover {
+  transition: color 0s;
+}
+
+p span:nth-child(1n):hover {
+  color: #11afdf;
+  /*font-size: 1.2em;*/
+}
+
+p span:nth-child(2n):hover {
+  color: #c243d3;
+}
+
+p span:nth-child(3n):hover {
+  color: #e6733e;
+}
+
+
+
+/*underline 
+h1 span {
+   background-size:  100% 15%;
+   background-repeat: repeat-x;
+   background-position: left 0% bottom 10%;
+  
+}
+
+
+.yo {
+  background-image: linear-gradient(90deg, rgb(218, 230, 1) 0%, rgb(218, 230, 1) 7%,rgb(226, 203, 7) 7%, rgb(226, 203, 7) 14%,rgb(234, 176, 13) 14%, rgb(234, 176, 13) 21%,rgb(242, 148, 18) 21%, rgb(242, 148, 18) 28%,rgb(250, 121, 24) 28%, rgb(250, 121, 24) 100%);
+  background-size: 100% 18%;
+}*/
+
+/*un */
+#hov > a:hover{
+  background-color: none !important;
+  color: black !important;
+}
+
+
+/* border animation */
+
+.block {
+	position: relative;
+	margin: 200px auto 0;
+	width: 100%;
+	height: 600px;
+	background: linear-gradient(0deg, whitesmoke, white);
+}
+
+.block:before, .block:after {
+	content: '';
+	position: absolute;
+	left: -2px;
+	top: -2px;
+	background: linear-gradient(45deg, #fb0094, #0000ff, #00ff00,#ffff00, #ff0000, #fb0094, 
+		#0000ff, #00ff00,#ffff00, #ff0000);
+	background-size: 400%;
+	width: calc(100% + 4px);
+	height: calc(100% + 4px);
+	z-index: -1;
+	animation: steam 20s linear infinite;
+}
+
+@keyframes steam {
+	0% {
+		background-position: 0 0;
+	}
+	50% {
+		background-position: 400% 0;
+	}
+	100% {
+		background-position: 0 0;
+	}
+}
+
+.block:after {
+	filter: blur(50px);
+}
+
+/*border animation simple*/
+:root {
+	--d: 2500ms;
+	--angle: 90deg;
+	--gradX: 100%;
+	--gradY: 50%;
+	--c1: rgb(8, 117, 141);
+	--c2: rgba(168, 239, 255, 0.1);
+}
+@property --angle {
+  syntax: '<angle>';
+  initial-value: 90deg;
+  inherits: true;
+}
+
+@property --gradX {
+  syntax: '<percentage>';
+  initial-value: 50%;
+  inherits: true;
+}
+
+@property --gradY {
+  syntax: '<percentage>';
+  initial-value: 0%;
+  inherits: true;
+}
+
+
+.box {
+	
+	margin: max(1rem, 3vw);
+	border: 0.35rem solid;
+	padding: 3vw;
+	border-image: conic-gradient(from var(--angle), var(--c2), var(--c1) 0.1turn, var(--c1) 0.15turn, var(--c2) 0.25turn) 30;
+	animation: borderRotate var(--d) linear infinite forwards;
+}
+
+.box:nth-child(2) {
+	border-image: radial-gradient(ellipse at var(--gradX) var(--gradY), var(--c1), var(--c1) 10%, var(--c2) 40%) 30;
+	animation: borderRadial var(--d) linear infinite forwards;
+}
+
+@keyframes borderRotate {
+	100% {
+		--angle: 420deg;
+	}
+}
+
+@keyframes borderRadial {
+	20% {
+		--gradX: 100%;
+		--gradY: 50%;
+	}
+	40% {
+		--gradX: 100%;
+		--gradY: 100%;
+	}
+	60% {
+		--gradX: 50%;
+		--gradY: 100%;
+	}
+	80% {
+		--gradX: 0%;
+		--gradY: 50%;
+	}
+	100% {
+		--gradX: 50%;
+		--gradY: 0%;
+	}
+}
+
+
+/*background */
+
+
+
+
+
+ol, ul {
+  list-style: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+caption, th, td {
+  text-align: left;
+  font-weight: normal;
+  vertical-align: middle;
+}
+
+q, blockquote {
+  quotes: none;
+}
+q:before, q:after, blockquote:before, blockquote:after {
+  content: "";
+  content: none;
+}
+
+a img {
+  border: none;
+}
+
+article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {
+  display: block;
+}
+
+*,
+*:after,
+*:before {
+  box-sizing: border-box;
+}
+
+.ww {
+  height: 100%;
+  width: auto;
+  
+  
+}
+
+
+
+
+.clearfix:before, .clearfix:after {
+  content: "";
+  display: table;
+}
+.clearfix:after {
+  clear: both;
+}
+
+.sepa {
+  width: 100%;
+  height: 1px;
+  margin: 0px auto;
+  border-top: 1px dashed #ecf0f1;
+}
+
+.noselect {
+  -moz-user-select: -moz-none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+      user-select: none;
+}
+
+.pause-anim {
+  -webkit-animation-play-state: paused !important;
+  animation-play-state: paused !important;
+}
+
+@-webkit-keyframes svg_outline {
+  100% {
+    stroke-dashoffset: 0;
+  }
+}
+@keyframes svg_outline {
+  100% {
+    stroke-dashoffset: 0;
+  }
+}
+@-webkit-keyframes svg_outline_hide {
+  0% {
+    stroke-dashoffset: 0;
+  }
+  100% {
+    stroke-dashoffset: 0;
+    stroke-width: 0;
+  }
+}
+@keyframes svg_outline_hide {
+  0% {
+    stroke-dashoffset: 0;
+  }
+  100% {
+    stroke-dashoffset: 0;
+    stroke-width: 0;
+  }
+}
+@-webkit-keyframes svg_fill_active {
+  100% {
+    fill: #e25027;
+    fill-opacity: 1;
+  }
+}
+@keyframes svg_fill_active {
+  100% {
+    fill: #e25027;
+    fill-opacity: 1;
+  }
+}
+@-webkit-keyframes svg_fill_inactive {
+  100% {
+    fill: #ebebeb;
+    fill-opacity: 1;
+  }
+}
+@keyframes svg_fill_inactive {
+  100% {
+    fill: #ebebeb;
+    fill-opacity: 1;
+  }
+}
+@-webkit-keyframes svg_stroke_inactive {
+  100% {
+    stroke: #ebebeb;
+  }
+}
+@keyframes svg_stroke_inactive {
+  100% {
+    stroke: #ebebeb;
+  }
+}
+@-webkit-keyframes svg_stroke_active {
+  100% {
+    stroke: #e25027;
+  }
+}
+@keyframes svg_stroke_active {
+  100% {
+    stroke: #e25027;
+  }
+}
+.ww {
+  overflow: hidden;
+}
+
+.loaded .bg {
+  opacity: 1;
+}
+
+.bg {
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  will-change: opacity;
+  transition: 1s opacity ease-out;
+
+  
+ 
+  z-index: -1; 
+}
+.bg polygon {
+  opacity: 0;
+  transform-origin: center center;
+}
