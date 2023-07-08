@@ -29,7 +29,7 @@
     <header>
     
       <nav class="navbar fixed-top navbar-expand-lg navbar-light nav-bg">
-                  <a class="navbar-brand" href="#"><img class="img" src="./images/plan.png" alt="" srcset=""></a>
+                  <a class="navbar-brand" href="#"><img class="img" src="./images/logo 5.jpg" alt="" srcset=""></a>
                   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                   </button>
@@ -37,11 +37,11 @@
                   <div class="collapse navbar-collapse" id="navbarSupportedContent">  
                     <ul class="navbar-nav mx-auto">
                       <li class="nav-item">
-                        <a class="nav-link d-flex align-items-center button mr-lg-3" href="#ct"><span class="button-content">Home</span></a>
+                        <a class="nav-link d-flex align-items-center button mr-lg-3" id="home-active" href="#ct"><span class="button-content">Home</span></a>
                       </li>
               
                       <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle d-flex align-items-center button mr-lg-3" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <a class="nav-link dropdown-toggle d-flex align-items-center button mr-lg-3" id="about-active" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                           <span class="button-content">About Us</span>
                           
                         </a>
@@ -92,7 +92,7 @@
 
       <!--crousal-->
 
-      <div id="myCarousel" class="carousel slide mb-0" data-ride="carousel">
+      <div id="myCarousel" class="carousel slide mb-0 text-non home" data-ride="carousel">
         <ol class="carousel-indicators">
           <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
           <li data-target="#myCarousel" data-slide-to="1"></li>
@@ -182,7 +182,7 @@
       
       <!--Welcome Page-->
 
-      <div class="container-fluid animated-text" id="welcome">
+      <div class="container-fluid animated-text home" id="welcome">
         <div class="row">
            <div class="col-lg-6 order-lg-2" id="anim">
           </div>
@@ -199,8 +199,9 @@
         </div>
       </div>
 
+
       <!-- why work with us -->
-      <div class="container box" id="os">
+      <div class="container box text-non about-us" id="os">
         <div class="row">
           <div class="col-12 text-center">
             <div class="background-color11">
@@ -226,13 +227,9 @@
       
 
       <!--cards-->
-      <div class="parent container-fluid" id="ww">
+      <div class="parent container-fluid text-non about-us" id="ww">
 
-        <!--background trial-->
-     
-        <!--background-->
-
-        <div class="row d-flex text-center justify-content-center mb-5 ww">
+        <div class="row d-flex text-center justify-content-center mb-5">
           <div class="col-12">
             <div class="background-color11">
             <h1>Why work with us!</h1>
@@ -240,8 +237,8 @@
           </div>
         </div>
 
-        <div class="row d-flex justify-content-center">
-            <div class="col-lg-4 col-12 mb-4">
+        <div class="row justify-content-center">
+            <div class="col-lg-3 col-10 why-bg mr-lg-4 mb-4 mb-lg-0">
               <div class="card-container2">
                 <div class="card2">
                   <div class="img-content">
@@ -266,7 +263,7 @@
               </div>
             </div>
 
-            <div class="col-lg-4 col-12 mb-4">
+            <div class="col-lg-3 col-10 why-bg mr-lg-4 mb-4 mb-lg-0 about-us">
               <div class="card-container2">
                 <div class="card2">
                   <div class="img-content">
@@ -283,7 +280,7 @@
               </div>
             </div>
 
-            <div class="col-lg-4 col-12">
+            <div class="col-lg-3 col-10 why-bg about-us">
               <div class="card-container2">
                 <div class="card2">
                   <div class="img-content">
@@ -304,7 +301,7 @@
 </div>
 
 <!--circular crousal-->
-<div class="container" id="ot">
+<div class="container text-non" id="ot">
     <div class="row mb-5">
       <div class="col-12">
         <div class="background-color11">
@@ -313,76 +310,32 @@
       </div>
     </div>
     <div class="row">
-      <div class="content-block content-block--circular-carousal">
-        <div class="grid-container">
-          <div class="grid-row">
-            <div class="grid-cell-4of4--phone">
-              <div class="circular-carousal">
-                <div class="circular-carousal--image">
-                
-                  <div class="container p-0">
-                    <div class="row">
-                      <div class="col-12">
-                        <img src="./images/man.jpg" width="100%" height="auto" alt="">
-                      </div>
-                    </div>
-                    <div class="row pt-3 my-3 d-flex flex-column">
-                    <h3 class="text-center">Shemsedin Mohammed</h3>
-                    <b class="text-center">Managing Director
-                      </b>
-                    </div>
-                  </div>         
-                
-                  
-                </div>
-                
-                <div class="circular-carousal--image">
-                  <div class="container p-0">
-                    <div class="row">
-                      <div class="col-12">
-                        <img src="./images/man.jpg" width="100%" height="auto" alt="">
-                      </div>
-                    </div>
-                    <div class="row pt-3 my-3 d-flex flex-column">
-                    <h2 class="text-center">Abdulhamid Ali</h2>
-                    <b class="text-center">Operations Manager
-                      </b>
-                    </div>
+      
+        <div class="content-block content-block--circular-carousal">
+          <div class="grid-container">
+            <div class="grid-row">
+              <div class="grid-cell-4of4--phone">
+                <div class="circular-carousal d-flex justify-content-center">
+                  <div class="circular-carousal--image">
+                    <img src="http://placekitten.com/400/200" alt="" />
+                    <h4 class="text-center">Abdulhamid Ali</h4>
+                    <p class="text-center py-0 mb-0">Operations Manager</p>
                   </div>
-                
-                </div>
-                <div class="circular-carousal--image image2">
-                  <div class="container p-0">
-                    <div class="row">
-                      <div class="col-12">
-                        <img src="./images/man.jpg" width="100%" height="auto" alt="">
-                      </div>
-                    </div>
-                    <div class="row pt-3 my-3 d-flex flex-column">
-                    <h2 class="text-center">Hiwot Belay</h2>
-                    <b class="text-center">Store Manager
-                      </b>
-                    </div>
+                  <div class="circular-carousal--image">
+                    <img src="http://placekitten.com/400/200" alt="" />
+                    <h4 class="text-center">Hiwot Belay</h4>
+                    <p class="text-center py-0 mb-0">Store Manager</p>
                   </div>
-                
-                </div>
-                <div class="circular-carousal--image">
-                  <div class="container p-0">
-                    <div class="row">
-                      <div class="col-12">
-                        <img src="./images/man.jpg" width="100%" height="auto" alt="">
-                      </div>
-                    </div>
-                    <div class="row pt-3 my-3 d-flex flex-column">
-                    <h2 class="text-center">Tofik Zeynu</h2>
-                    <b class="text-center">Biomedical Engineer
-                      </b>
-                    </div>
+                  <div class="circular-carousal--image image2">
+                    <img src="http://placekitten.com/400/200" alt="" />
+                    <h4 class="text-center">Tofik Zeynu</h4>
+                    <p class="text-center py-0 mb-0">Biomedical Engineer</p>
                   </div>
-                  
-                </div>
-              
-                
+                  <div class="circular-carousal--image">
+                    <img src="http://placekitten.com/400/200" alt="" />
+                    <h4 class="text-center">Shemsedin Mohammed</h4>
+                    <p class="text-center py-0">Managing Director</p>
+                  </div>
                 </div>
               </div>
             </div>
@@ -678,7 +631,7 @@
 <script src="./scripts/c.js"></script>
 <script src="./scripts/b.js"></script>
 
-    
+<script  src="./script/team-script.js"></script>    
     
 <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
