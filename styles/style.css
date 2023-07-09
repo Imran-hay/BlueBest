@@ -235,24 +235,24 @@ body{
 #lottie-container {
   width: 100vw; /* set the width of the container */
   height: 100%; /* set the height of the container */
-  background-color: whitesmoke;
+  background-color: white;
   /*background-image: url("b4.jpg");*/
 }
 #lottie-container2 {
   width: 100vw; /* set the width of the container */
   height: 100%; /* set the height of the container */
-  background-color: whitesmoke;
+  background-color: white;
 }
 #lottie-container3 {
   width: 100%; /* set the width of the container */
   height: 100%; /* set the height of the container */
-  background-color: whitesmoke;
+  background-color: white;
 }
 
 #lottie-container4 {
   width: 100%; /* set the width of the container */
   height: 100%; /* set the height of the container */
-  background-color: whitesmoke;
+  background-color: white;
 }
 
 
@@ -1443,6 +1443,59 @@ body.light .progress-wrap svg.progress-circle path {
 /*for colorful text */
 
 .background-color11 h1 {
+  color: #000;
+  font-size: 2.5em;
+  font-weight: bold;
+  letter-spacing: 0.2em;
+ 
+  background: rgba(255, 253, 160, 1);
+  background: -webkit-linear-gradient( left, #00ffff 0%, #97fba0 25%, blue 50%, #00ffff 100%) repeat;
+  -webkit-background-clip: text;
+  -ms-background-clip: text;
+  -moz-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -ms-text-fill-color: transparent;
+  -moz-text-fill-color: transparent;
+  text-fill-color: transparent;
+  -webkit-animation-name: masked-animation;
+  -webkit-animation-duration: 50s;
+  -webkit-animation-iteration-count: infinite;
+  -webkit-animation-timing-function: linear;
+}
+
+.background-color11 h2 {
+  color: #000;
+  font-size: 2.5em;
+  font-weight: bold;
+  letter-spacing: 0.2em;
+ 
+  background: rgba(255, 253, 160, 1);
+  background: -webkit-linear-gradient( left, #00ffff 0%, #97fba0 25%, blue 50%, #00ffff 100%) repeat;
+  -webkit-background-clip: text;
+  -ms-background-clip: text;
+  -moz-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -ms-text-fill-color: transparent;
+  -moz-text-fill-color: transparent;
+  text-fill-color: transparent;
+  -webkit-animation-name: masked-animation;
+  -webkit-animation-duration: 50s;
+  -webkit-animation-iteration-count: infinite;
+  -webkit-animation-timing-function: linear;
+}
+
+@-webkit-keyframes masked-animation {
+  0% {
+    background-position: 0 0;
+  }
+  100% {
+    background-position: -8000px -3000px;
+  }
+}
+
+.background-color11 h2 {
   color: #000;
   font-size: 3vw;
   font-weight: bold;
