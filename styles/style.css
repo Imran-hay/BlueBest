@@ -27,6 +27,11 @@ body{
   background-size: contain;
 }
 
+#n1 {
+  color: white !important;
+  font-size: 3.0em !important;
+}
+
 .nav-bg{
   background-color: #0B476C;
   
@@ -1478,9 +1483,34 @@ body.light .progress-wrap svg.progress-circle path {
 
 .background-color11 h1 {
   color: #000;
-  font-size: 2.5em;
+  font-size: 2.8em;
   font-weight: bold;
   letter-spacing: 0.2em;
+  
+
+  background: rgba(255, 253, 160, 1);
+  background: -webkit-linear-gradient( left, #00ffff 0%, #97fba0 25%, blue 50%, #00ffff 100%) repeat;
+  -webkit-background-clip: text;
+  -ms-background-clip: text;
+  -moz-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -ms-text-fill-color: transparent;
+  -moz-text-fill-color: transparent;
+  text-fill-color: transparent;
+  -webkit-animation-name: masked-animation;
+  -webkit-animation-duration: 50s;
+  -webkit-animation-iteration-count: infinite;
+  -webkit-animation-timing-function: linear;
+}
+
+.background-color12 h2 {
+  color: #000;
+  font-size: 2.8em;
+  font-weight: bold;
+  letter-spacing: 0.2em;
+  
+  
  
   background: rgba(255, 253, 160, 1);
   background: -webkit-linear-gradient( left, #00ffff 0%, #97fba0 25%, blue 50%, #00ffff 100%) repeat;
@@ -1498,27 +1528,31 @@ body.light .progress-wrap svg.progress-circle path {
   -webkit-animation-timing-function: linear;
 }
 
-.background-color11 h2 {
-  color: #000;
-  font-size: 2.5em;
-  font-weight: bold;
-  letter-spacing: 0.2em;
- 
-  background: rgba(255, 253, 160, 1);
-  background: -webkit-linear-gradient( left, #00ffff 0%, #97fba0 25%, blue 50%, #00ffff 100%) repeat;
-  -webkit-background-clip: text;
-  -ms-background-clip: text;
-  -moz-background-clip: text;
-  background-clip: text;
-  -webkit-text-fill-color: transparent;
-  -ms-text-fill-color: transparent;
-  -moz-text-fill-color: transparent;
-  text-fill-color: transparent;
-  -webkit-animation-name: masked-animation;
-  -webkit-animation-duration: 50s;
-  -webkit-animation-iteration-count: infinite;
-  -webkit-animation-timing-function: linear;
-}
+/*@media only screen and (max-width: 800px) {
+  .background-color12 h2 {
+
+    justify-content: center;
+    align-items: center;
+    word-spacing: -0.1em;
+    
+
+    
+
+    
+  
+  }
+
+  .background-color11 h1 {
+
+    word-spacing: -0.1em;
+    justify-content: center;
+    align-items: center;
+  
+  }
+  
+}*/
+
+
 
 @-webkit-keyframes masked-animation {
   0% {
@@ -1529,27 +1563,7 @@ body.light .progress-wrap svg.progress-circle path {
   }
 }
 
-.background-color11 h2 {
-  color: #000;
-  font-size: 3vw;
-  font-weight: bold;
-  letter-spacing: 0.8vw;
- 
-  background: rgba(255, 253, 160, 1);
-  background: -webkit-linear-gradient( left, #00ffff 0%, #97fba0 25%, blue 50%, #00ffff 100%) repeat;
-  -webkit-background-clip: text;
-  -ms-background-clip: text;
-  -moz-background-clip: text;
-  background-clip: text;
-  -webkit-text-fill-color: transparent;
-  -ms-text-fill-color: transparent;
-  -moz-text-fill-color: transparent;
-  text-fill-color: transparent;
-  -webkit-animation-name: masked-animation;
-  -webkit-animation-duration: 50s;
-  -webkit-animation-iteration-count: infinite;
-  -webkit-animation-timing-function: linear;
-}
+
 
 @-webkit-keyframes masked-animation {
   0% {
