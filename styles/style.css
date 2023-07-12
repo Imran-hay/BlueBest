@@ -1552,6 +1552,25 @@ body.light .progress-wrap svg.progress-circle path {
   
 }*/
 
+/*new class added*/
+/* .carousel-cap{
+  position: absolute;
+    bottom: 20px;
+    padding: 20px 0 20px 15px;
+    z-index: 10;
+
+    color: #fff;
+    width: 100% !important;
+}
+
+
+p.justify {
+  text-align: justify;
+  -webkit-text-size-adjust: 100%;
+  text-size-adjust: 100%;
+  word-spacing: -0.05em;
+}
+ */
 
 
 @-webkit-keyframes masked-animation {
