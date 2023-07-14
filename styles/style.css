@@ -717,20 +717,20 @@ body{
   .circular-carousal .circular-carousal--image.left {
     transform: rotateY(-25deg) scale(0.7, 0.7);
     order: 2;
-    width: 800px;
+    width: 800px; /* change this */
     height: 330px;
   }
 
   .circular-carousal .circular-carousal--image.center {
     order: 3;
-    width:1450px;
+    width:1450px;/* change this */
     height: 330px;
   }
 
   .circular-carousal .circular-carousal--image.right {
     transform: rotateY(25deg) scale(0.7, 0.7);
     order: 4;
-    width: 800px;
+    width: 800px;/* change this */
     height: 330px;
   }
   .circular-carousal .circular-carousal--image.far-right {
