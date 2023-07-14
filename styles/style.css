@@ -75,7 +75,7 @@ body{
 }
 
 .active-bg{
-  background-color: #267326 !important;
+  background-color: #119dee;
 }
 
 @media screen and (min-width: 992px) {
@@ -241,24 +241,32 @@ body{
 #lottie-container {
   width: 100vw; /* set the width of the container */
   height: 100%; /* set the height of the container */
-  background-color: white;
+  background-color: rgba(255, 255, 255, 0.452);
   /*background-image: url("b4.jpg");*/
 }
 #lottie-container2 {
   width: 100vw; /* set the width of the container */
   height: 100%; /* set the height of the container */
-  background-color: white;
+  background-color: rgba(255, 255, 255, 0.452);
 }
 #lottie-container3 {
   width: 100%; /* set the width of the container */
   height: 100%; /* set the height of the container */
-  background-color: white;
+  background-color: rgba(255, 255, 255, 0.452);
 }
 
 #lottie-container4 {
   width: 100%; /* set the width of the container */
   height: 100%; /* set the height of the container */
-  background-color: white;
+  background-color: rgba(255, 255, 255, 0.452);
+}
+
+.ptt{
+  padding-top: 80;
+}
+
+.pttt{
+  padding-top: 40;
 }
 
 

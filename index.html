@@ -10,6 +10,7 @@
    <!--for to top-->
    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
    <link rel="stylesheet" href="./styles/style.css">
+   <link rel="stylesheet" href="./libraries/dist/css/bootstrap.min.css">
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/bodymovin/5.12.2/lottie.min.js" integrity="sha512-jEnuDt6jfecCjthQAJ+ed0MTVA++5ZKmlUcmDGBv2vUI/REn6FuIdixLNnQT+vKusE2hhTk2is3cFvv5wA+Sgg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
   <link href="./styles/carousel.css" rel="stylesheet">
@@ -25,7 +26,7 @@
   <title>BlueBestTrading</title>
 
 </head>
-<body>
+<body onload="cw()">
     <header style="padding-bottom: 40px;">
     
       <nav class="navbar fixed-top navbar-expand-lg navbar-light nav-bg">
@@ -62,7 +63,7 @@
                     </ul>
                       <div class="card d-flex flex-row">
                         <span class="disp">Socials</span>
-                        <a class="social-link nav-link" href="#">
+                        <a class="social-link nav-link" href="https://instagram.com/bluebesttrading?igshid=MzNlNGNkZWQ4Mg==">
                           <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" fill="#ef4c60" class="bi bi-instagram" viewBox="0 0 16 16">
                             <path d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.917 3.917 0 0 0-1.417.923A3.927 3.927 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.916 3.916 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.926 3.926 0 0 0-.923-1.417A3.911 3.911 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0h.003zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599.28.28.453.546.598.92.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.47 2.47 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.478 2.478 0 0 1-.92-.598 2.48 2.48 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233 0-2.136.008-2.388.046-3.231.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92.28-.28.546-.453.92-.598.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045v.002zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92zm-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217zm0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334z"/>
                           </svg>
@@ -93,13 +94,15 @@
 
       <!--crousal-->
 
-      <div id="myCarousel" class="carousel slide mb-0 text-non home" style="padding-top: 80px;" data-ride="carousel">
-        <ol class="carousel-indicators">
+      <div id="myCarousel" class="carousel slide mb-0 text-non home ptt" style="padding-top: 30px;" data-ride="carousel">
+        <ol class="Carousel-indicators">
           <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
           <li data-target="#myCarousel" data-slide-to="1"></li>
           <li data-target="#myCarousel" data-slide-to="2"></li>
+          <li data-target="#myCarousel" data-slide-to="3"></li>
+         
         </ol>
-        <div class="carousel-inner" id="ct">
+        <div class="carousel-inner" id="ct" style="padding-top: 70px;">
           <div class="carousel-item active">
             <div id="lottie-container" class="lottie-container"></div>
             <!--<img class="first-slide" src="plan.jpg" alt="First slide">-->
@@ -130,7 +133,8 @@
                 <h2 class="ct">About US</h2>
                 </div>
                 <div class="ct">
-                  BlueBest Trading is a multi-sectoral investment firm founded in 2011, involved in real estate, manufacturing, textiles, and pharmaceuticals with a focus on importing and distributing quality medical products to address supply challenges
+                  <!--BlueBest Trading is a multi-sectoral investment firm founded in 2011, involved in real estate, manufacturing, textiles, and pharmaceuticals with a focus on importing and distributing quality medical products to address supply challenges-->
+                  Bluebest Trading is a trusted name in the Ethiopian pharmaceutical market, specializing in the import, distribution, and promotion of high-quality pharmaceutical products and medical devices. Contact us for all your pharmaceutical needs.
                 </div>
                 <a href="#os"><button class="button2">
                   <span class="button2-content">Learn More </span>
@@ -165,7 +169,9 @@
                 <h2 class="ct">Services we provide</h2>
                 </div>
                 <div class="ct">
-                  BlueBest Trading is a comprehensive pharmaceutical company offering import, distribution, marketing services, local representation for government tenders, and assistance with market authorization processes.
+                 <!-- BlueBest Trading is a comprehensive pharmaceutical company offering import, distribution, marketing services, local representation for government tenders, and assistance with market authorization processes.-->
+                 Importing and Distributing Quality Medical Products
+                  We are addressing supply challenges with our wide range of quality medical products. Importing and distributing to meet your healthcare needs.
                 </div>
                 <a href="#os"><button class="button2">
                   <span class="button2-content">Learn More </span>
@@ -174,12 +180,12 @@
             </div>
           </div>
         </div>
-        <a class="carousel-control-prev" href="#myCarousel" role="button" data-slide="prev">
-          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <a class="Carousel-control-prev" href="#myCarousel" role="button" data-slide="prev">
+          <span class="Carousel-control-prev-icon" aria-hidden="true"></span>
           <span class="sr-only">Previous</span>
         </a>
-        <a class="carousel-control-next" href="#myCarousel" role="button" data-slide="next" id="ct">
-          <span class="carousel-control-next-icon" aria-hidden="true" ></span>
+        <a class="Carousel-control-next" href="#myCarousel" role="button" data-slide="next" id="ct">
+          <span class="Carousel-control-next-icon" aria-hidden="true" ></span>
           <span class="sr-only" >Next</span>
         </a>
       </div>
@@ -199,7 +205,7 @@
             
 
             
-            <p class="dt">BlueBest is a  sole proprietary multi-sectoral industry investment firm that has been majorly involved in the Real estate and manufacturing businesses ever since its establishment in the year 2011 in Addis Ababa by Ethiopian young entrepreneurs. The company has a successful textile industry in Kenya. BlueBest Trading joined the pharmaceutical sector in May 2013 with the aim of importing and distributing quality pharmaceutical products, medical devices and laboratory reagents.</p>
+            <p class="dt">BlueBest Trading is a  sole proprietary multi-sectoral industry investment firm that has been majorly involved in the Real estate and manufacturing businesses ever since its establishment in the year 2011 in Addis Ababa by Ethiopian entrepreneurs. The company has a successful textile industry in Kenya. BlueBest Trading joined the pharmaceutical sector in May 2021 with the aim of importing and distributing quality pharmaceutical products, medical devices and laboratory reagents.</p>
           </div>
         </div>
       </div>
@@ -318,29 +324,31 @@
                 <div class="circular-carousal d-flex justify-content-center">
                   <div class="circular-carousal--image">
                     <img src="./images/h2.jpg" alt="" />
-                    <h4 class="text-center">Abdulhamid Ali</h4>
-                    <p class="text-center py-0 mb-0">Operations Manager</p>
+                    <h4 class="text-center" style="font-size: 1.2em; color: brown;">Abdulhamid Ali</h4>
+                    <p class="text-center py-0 mb-0" style="font-size: 1.1em;">General Manager</p>
                   </div>
                   <div class="circular-carousal--image">
                     <img src="images/f.png" alt="" />
-                    <h4 class="text-center">Hiwot Belay</h4>
-                    <p class="text-center py-0 mb-0">Store Manager</p>
+                    <h4 class="text-center" style="font-size: 1.2em; color: brown;">Hiwot Belay</h4>
+                    <p class="text-center py-0 mb-0" style="font-size: 1.1em;">Store Manager</p>
                   </div>
                   <div class="circular-carousal--image image2">
                     <img src="images/m.png" alt="" />
-                    <h4 class="text-center">Tofik Zeynu</h4>
-                    <p class="text-center py-0 mb-0">Biomedical Engineer</p>
+                    <h4 class="text-center" style="font-size: 1.2em; color: brown;">Tofik Zeynu</h4>
+                    <p class="text-center py-0 mb-0" style="font-size: 1.1em;">Biomedical Engineer</p>
                   </div>
                   <div class="circular-carousal--image">
                     <img src="images/m.png" alt="" />
-                    <h4 class="text-center">Shemsedin Mohammed</h4>
-                    <p class="text-center py-0">Managing Director</p>
+                    <h4 class="text-center" style="font-size: 1.2em; color: brown;">Shemsedin Mohammed</h4>
+                    <p class="text-center py-0" style="font-size: 1.1em;">Owner and CEO</p>
                   </div>
+                  
                   <div class="circular-carousal--image">
                     <img src="images/m.png" alt="" />
-                    <h4 class="text-center">Shemsedin Mohammed</h4>
-                    <p class="text-center py-0">Managing Director</p>
+                    <h4 class="text-center" style="font-size: 1.2em; color: brown;">Amir Hayredin</h4>
+                    <p class="text-center py-0" style="font-size: 1.1em;">Marketing Manager</p>
                   </div>
+                 
                 </div>
               </div>
             </div>
@@ -421,8 +429,10 @@
   <div class="row mt-5 justify-content-center contact" id="hider">
       <div class="col-4 d-flex justify-content-center align-items-center">
           <form class="form">
+           
               <ul class="wrapper">
-                <li style="--i:4;"><input class="text-white input" type="text" placeholder="Name" required=""></li>
+               
+                <li style="--i:4;"><input class="text-white input" id="p11" type="text" placeholder="Name" required=""></li>
                 <li style="--i:3;"><textarea class="text-white input" placeholder="Message" required="" name="phone" style="height: 80px;"></textarea></li>
                 <li style="--i:2;"><input class="text-white input" type="email" placeholder="E-mail" required="" name="email"></li>
                 <button class="butt" style="--i:1;">Submit</button>
@@ -454,7 +464,8 @@
                   <div class="col-lg-4 col-8">
                  
                       <!-- <p id="alt-text">Your browser does not support iframes or there was an error loading the content.</p>
-                      --> <iframe id="iframe" src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d2624.764066114199!2d38.79762343660764!3d8.862865084129705!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2set!4v1688628685085!5m2!1sen!2set" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" onerror="showAltText()"></iframe> 
+                       <iframe id="iframe" src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d2624.764066114199!2d38.79762343660764!3d8.862865084129705!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2set!4v1688628685085!5m2!1sen!2set" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" onerror="showAltText()"></iframe> -->
+                       <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3940.64121134244!2d38.694204199999994!3d9.0051232!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x164b878a9bf299c9%3A0x9a1f51e74e262f37!2sFAMILY%20TOWER!5e0!3m2!1sen!2set!4v1689333869222!5m2!1sen!2set" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
                     
                   </div>
                   <div class="col-lg-4 d-flex flex-column pl-5 pt-3 text-center">
@@ -464,8 +475,8 @@
                       
                             <ul>
                               <li class="d-flex justify-content-center align-items-center">Addis Ababa City, Zip code 00251,</li>
-                              <li class="d-flex justify-content-center align-items-center">Kolife Keraniyo Sub City,</li>
-                              <li class="d-flex justify-content-center align-items-center">Wereda 6, Arround Bethel</li>
+                              <li class="d-flex justify-content-center align-items-center">Kolfe Keraniyo Sub City,</li>
+                              <li class="d-flex justify-content-center align-items-center">Wereda 6, Around Bethel</li>
                             </ul>
                       </li>
                       <li class="d-flex justify-content-center align-items-center flex-row">
@@ -635,7 +646,20 @@
 
   <script src="./scripts/contact.js"></script>
 
+<script>
 
+var w = window.innerWidth;
+  var c = document.getElementById("ct");
+
+  if (w > 800 )
+  {
+    c.style.paddingTop= "10px";
+  }
+
+ 
+
+
+</script>
 
     
 
@@ -646,6 +670,7 @@
 <script src="./scripts/iframe.js"></script> -->
 
 <script  src="./scripts/team-script.js"></script>    
+<script  src="./libraries/dist/js/bootstrap.min.js"></script>   
     
 <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>

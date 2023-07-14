@@ -143,6 +143,18 @@ function cbg()
 
 }
 
+function cw()
+{
+  var w = window.innerWidth;
+  var c = document.getElementById("ct");
+
+  if (w > 800 )
+  {
+    c.style.paddingTop= "10px";
+  }
+
+}
+
 
 //background
 
